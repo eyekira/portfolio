@@ -20,14 +20,15 @@
 .header {
     display: flex;
     position: fixed;
-    z-index: 100;
+    z-index: 1;
     flex-direction: row;
     justify-content: space-between;
-    width: 94%;
-    padding: 30px;
-    height: 50px;
+    width: 96%;
+    padding: 20px;
+    height: 100px;
     align-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin: auto;
 }
 
 .sns {
@@ -61,7 +62,6 @@
 .kk {
     position: absolute;
     z-index: 10;
-    margin: 1.5rem;
     color: white;
     font-size: 150%;
 }
@@ -136,11 +136,13 @@
 .cv p:hover,
 #sns-f:hover,
 #sns-l:hover {
-    color: #F7C331;
+    color: #F7C331 !important;
     cursor: pointer;
     transition: .3s ease;
 }
-
+button{
+    cursor: pointer;
+}
 
 .h1 {
     font-family: 'Futura PT', 'Josefin Sans', sans-serif !important;
