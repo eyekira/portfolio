@@ -1,0 +1,153 @@
+.row {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+[class^="col-"] {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 0.5rem;
+}
+
+@media only screen and (min-width: 780px) {
+    .medium [class^="col-"] {
+        flex-basis: 50%
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    
+    .row .col-auto {
+    flex-basis: 0;
+    }
+
+    .row .col-01 {
+        flex-basis: 8.3333%;
+        overflow: hidden;
+    }
+
+    .row .col-02 {
+        flex-basis: 16.6666%;
+    }
+
+    .row .col-03 {
+        flex-basis: 25%;
+    }
+
+    .row .col-04 {
+        flex-basis: 33.3333%;
+    }
+
+    .row .col-05 {
+        flex-basis: 41.6666%;
+    }
+
+    .row .col-06 {
+        flex-basis: 50%;
+    }
+
+    .row .col-07 {
+        flex-basis: 58.3333%;
+    }
+
+    .row .col-08 {
+        flex-basis: 66.6666%;
+    }
+
+    .row .col-09 {
+        flex-basis: 75%;
+    }
+
+    .row .col-10 {
+        flex-basis: 83.3333%;
+    }
+
+    .row .col-11 {
+        flex-basis: 91.6666%;
+    }
+
+    .row .col-12 {
+        flex-basis: 100%;
+    }
+
+    .row .offset-01 {
+        margin-left: 8.3333%;
+    }
+
+    .row .offset-02 {
+        margin-left: 16.6666%;
+    }
+
+    .row .offset-03 {
+        margin-left: 25%;
+    }
+
+    .row .offset-04 {
+        margin-left: 33.3333%;
+    }
+
+    .row .offset-05 {
+        margin-left: 41.6666%;
+    }
+
+    .row .offset-06 {
+        margin-left: 50%;
+    }
+
+    .row .offset-07 {
+        margin-left: 58.3333%;
+    }
+
+    .row .offset-08 {
+        margin-left: 66.6666%;
+    }
+
+    .row .offset-09 {
+        margin-left: 75%;
+    }
+
+    .row .offset-10 {
+        margin-left: 83.3333%;
+    }
+
+    .row .offset-11 {
+        margin-left: 91.6666%;
+    }
+
+}
+  
+.start {
+    justify-content: flex-start;
+    text-align: start;
+}
+
+.center {
+    justify-content: center;
+    text-align: center;
+}
+
+.end {
+    justify-content: flex-end;
+    text-align: end;
+}
+    
+.top {
+    align-items: flex-start;
+}
+
+.middle {
+    align-items: center;
+}
+
+.bottom {
+    align-items: flex-end;
+}
+
+.equal-height {
+    background-color: blueviolet;
+}
