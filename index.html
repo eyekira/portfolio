@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="css/aos.css" />
 
@@ -23,6 +24,8 @@
     <script src="https://kit.fontawesome.com/9939cc95e4.js" crossorigin="anonymous"></script>
     <!--        CSS styles end-->
     <script src="js/fullpage.js"></script>
+    <script src="js/carousel.js"></script>
+
     <!--        Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -36,7 +39,13 @@
     <script src="js/aos.js"></script>
 
     <!--    jquery ends-->
-
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -93,13 +102,14 @@
         <img src='img/down-arrow-y.png' onmouseover="this.src='img/down-arrow-g.png';"
             onmouseout="this.src='img/down-arrow-y.png';" />
     </button>
+
     <a href="https://kirakim.myportfolio.com" target="_blank" class="button" id="moveRight">
         <img src='img/down-arrow-y.png' onmouseover="this.src='img/down-arrow-g.png';"
             onmouseout="this.src='img/down-arrow-y.png';" />
     </a>
 
 
-    <!--                             </button></a>-->
+                                <!-- </button></a> -->
     <div id="fullpage">
 
         <!--Homepage-->
@@ -149,7 +159,8 @@
 
         <!--Work-->
         <div class="section .fp-viewing-2ndpage" id="2ndpage">
-            <div class="work-img-container">
+
+            <!-- <div class="work-img-container">
                 <a href="https://kirakim.myportfolio.com/copy-of-prototyping" target="_blank">
                     <img id="bty" src="img/work_01.png" />
                 </a>
@@ -186,12 +197,46 @@
                 <img id="natori-1" src="img/work_02.jpg" />
             </div>
 
+        </div> -->
+
+
+            <div class="d-flex work-page f-center">
+                <div class="f-item d-flex f-center">
+                    <div class="wrapper justify-content-around d-flex flex-wrap">
+                        <div id="work" class=" col-5 p-3 bg-body rounded">
+                            <h2 class="h1 is-black is-on-top " id="work-h1">Works</h1>
+
+                                <div id="line_l" class="yellow-line"></div>
+                                <h3 class="h2 is-black is-on-top is-left-align work-text" id="work-h2">check wide range of design works
+                            </h2>
+                        </div>
+                        <div id="ux-design" class="shadow col-5 p-3 bg-body rounded">UX Design</div>
+                        <div id="web-design" class="shadow col-5 p-3 bg-body rounded">Web Design</div>
+                        <div id="digital-design" class="shadow col-5 p-3 bg-body rounded">Digital Design</div>
+                    </div>
+
+                </div>
+                <!-- <div class="f-item d-flex f-center col-4">
+                    <div class="work-container">
+
+                        <h2 class="h1 is-black is-on-top " id="work-h1">Works</h1>
+
+                            <div id="line_l" class="yellow-line"></div>
+                            <h3 class="h2 is-black is-on-top is-left-align bio-text" id="bio-h2">from print to digital,
+                                <br>wireframe to prototype
+                        </h2>
+                        <a id="showcase-1" href="https://kirakim.myportfolio.com">
+                            showcase
+                        </a>
+                        <a href="https://kirakim.myportfolio.com" target="_blank" class="button" id="moveRight-2">
+                            <img src='img/right-arrow-y.png'>
+                        </a>
+                    </div>
+                </div> -->
+
+            </div>
+
         </div>
-
-
-
-
-
 
 
 

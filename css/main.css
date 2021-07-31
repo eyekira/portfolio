@@ -16,6 +16,12 @@
     list-style-image: url(../img/Rectangle%2016.png);
 }
 
+.f-center{
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
 /* header */
 .header {
     display: flex;
@@ -23,7 +29,7 @@
     z-index: 1;
     flex-direction: row;
     justify-content: space-between;
-    width: 96%;
+    width: calc(100% - 2.5em);
     padding: 20px;
     height: 100px;
     align-content: center;
@@ -33,12 +39,15 @@
 
 .sns {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-content: center;
+    flex-basis: 33.3333%;
+    order: 3;
 }
 
 .sns a {
-    padding: 10px;
+    color: white;
+    padding: 5px 10px;
     text-decoration: none;
 }
 
@@ -58,12 +67,19 @@
     transform: translate(-50%, 0%);
 
 }
+.nav-wrapper{
+    order: 2;
+    flex-basis: 33.3333%;
+}
+
 
 .kk {
-    position: absolute;
+    flex-basis: 33.3333%;
+    position: relative;
     z-index: 10;
     color: white;
     font-size: 150%;
+    order: 1;
 }
 
 .cv {
@@ -84,7 +100,7 @@
 .cv a:visited {
     color: white;
 }
-
+/* 
 .fb {
     position: absolute;
     z-index: 10;
@@ -105,15 +121,15 @@
     right: 3rem;
     top: 0;
     font-weight: 400;
-}
-
+} */
+/* 
 .linkedin img {
     width: 30px;
 }
 
 .fb img {
     width: 30px;
-}
+} */
 
 .fb p {
     margin: 0;
@@ -153,7 +169,7 @@ button{
     font-weight: 500;
     font-size: 270%;
     padding-bottom: 0rem;
-
+    margin-top: 0 !important;  
 }
 
 .sm-text {
@@ -219,8 +235,9 @@ p {
     animation: line_r_animation 1.5s ease;
 }
 
-#bio-h1~.yellow-line {
-    float: none;
+#bio-h1~.yellow-line, #work-h1~.yellow-line {
+    float: left;
+    margin-bottom: 32px;
 }
 
 #bio-h2 {
@@ -369,6 +386,11 @@ p {
     margin-right: 1rem;
     margin-left: 1rem;
     padding: 0em 2em;
+}
+
+#work-h2{
+font-size: 18px;
+margin-top: 23px;
 }
 
 .work-container .gif-container {
@@ -575,6 +597,11 @@ ul {
     animation: 1.5s ease-out 0s 1 slideInFromLeft;
 }
 
+.bio-container-2 p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
 @keyframes slideInFromLeft {
     0% {
         opacity: 0;
@@ -591,21 +618,17 @@ ul {
     }
 }
 
+.work-page{
+    width: 95%;
+    margin: auto;
+    height: 95%;
+}
+
 .work-container {
     display: flex;
-    position: absolute;
-    bottom: 20%;
-    right: 6%;
     flex-flow: column;
-    width: 35vw;
 }
-
-.bio-container-2 {
-    margin-top: -1.3em;
-    padding-left: 4em;
-
-}
-
+/* 
 .work-img-container {
     width: 50%;
 }
@@ -645,7 +668,7 @@ ul {
 #natori:hover {
     transform: scale(1.05);
     transition: ease 1s;
-}
+} */
 
 #hand {
     animation: shake 2s;
@@ -706,7 +729,23 @@ ul {
 }
 
 
+.work-page .shadow{
+    min-height: 35vh;
+}
 
+.wrapper.justify-content-around.d-flex.flex-wrap div {
+    margin: 10px auto;
+}
+
+.work-page .wrapper{
+    height: 85%;
+    width: 79%;
+}
+
+.work-page .f-center{
+    width: 100%;
+
+}
 
 /* ---------Media Queries Breakpoints----------*/
 
@@ -733,6 +772,7 @@ ul {
 @media only screen and (min-width : 769px) {}
 
 @media only screen and (max-width : 800px) {
+
     h1 {
         text-align: center;
         font-size: 250%;
@@ -752,15 +792,21 @@ ul {
         width: 70%;
         display: block;
         margin-top: -6rem;
+        margin-bottom: 50px;
         position: relative;
         left: 50%;
         transform: translate(-50%, 0%);
         text-align: center;
     }
 
+    .bio-container-2 p {
+        font-size: 20px;
+        line-height: 1.8;
+    }
+
     .kk {
         z-index: 1;
-        left: 3rem;
+        /* left: 3rem; */
     }
 
     .bio-container {
@@ -779,7 +825,7 @@ ul {
     }
 
     .circle-deco img {
-        left: 20vh;
+        left: 16vh;
         position: absolute;
         top: -3rem;
     }
@@ -792,6 +838,10 @@ ul {
         left: 10vh;
         padding: 0;
         margin: 0;
+    }
+
+    .header {
+    width: 100%;
     }
 
     .gif-container img {
@@ -822,7 +872,7 @@ ul {
 
     .nav-wrapper {
         position: relative;
-        width: 100%;
+        width: 50px;
         height: 100%;
         font-family: 'Futura PT', 'Josefin Sans', sans-serif !important;
         font-style: normal;
@@ -834,7 +884,7 @@ ul {
     .nav-wrapper::after {
         content: '';
         position: relative;
-        display: block;
+        display: none;
         width: 100%;
         height: 50%;
     }
@@ -844,7 +894,7 @@ ul {
     }
 
     .nav-wrapper nav {
-        position: fixed;
+        position: relative;
         /* top: 5%; */
         left: 50%;
         width: 0%;
@@ -862,7 +912,8 @@ ul {
         border-radius: 0px;
         /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); */
         /* background-color: rgb(255, 255, 255); */
-        padding-right: 30px;
+        /* padding-right: 30px; */
+        padding-top: 7px;
         line-height: 3;
         display: flex;
         justify-content: space-between;
@@ -904,13 +955,13 @@ ul {
         display: inline-block;
         width: 40px;
         height: 48px;
-        padding: 14px 5px;
+        /* padding: 14px 5px; */
         cursor: pointer;
     }
 
-    .nav-wrapper:not(.active) .nav-toogler {
+    /* .nav-wrapper:not(.active) .nav-toogler {
         margin-left: -10px;
-    }
+    } */
 
     .nav-toogler::before,
     .nav-toogler::after {
@@ -929,7 +980,7 @@ ul {
 
     .nav-wrapper.active .nav-toogler::before,
     .nav-wrapper.active .nav-toogler::after {
-        position: absolute;
+        position: relative;
         top: 45%;
         background-color: #F7C331;
         transform: rotate(135deg);
@@ -938,7 +989,7 @@ ul {
 
     .nav-wrapper.active .nav-toogler::after {
         transform: rotate(-135deg);
-        margin-top: 0;
+        margin-top: -4px;
 
     }
 
@@ -952,21 +1003,22 @@ ul {
     }
 
     .work-container {
-        text-align: left;
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 70%;
+        width: 100%;
         background-color: white;
         padding: 4em;
-        top: 20%;
-        margin-top: -1.5rem;
+        display: flex;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        right: 0;
     }
 
 
     #work-h1 {
         text-align: left;
     }
+
+
 
     /*#work-h1 ~ .yellow-line {*/
     /*
@@ -1204,7 +1256,7 @@ ul {
 @media only screen and (max-width: 800px) {
     .nav-wrapper {
         position: relative;
-        width: 100%;
+        width: 50px;
         height: 100%;
         font-family: 'Futura PT', 'Josefin Sans', sans-serif !important;
         font-style: normal;
@@ -1213,7 +1265,7 @@ ul {
     }
 
     .nav-wrapper nav {
-        position: fixed;
+        position: relative;
         /* top: 5%; */
         left: 50%;
         width: 0%;
