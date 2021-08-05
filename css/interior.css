@@ -1,0 +1,110 @@
+
+/* interior */
+body {
+    position: relative;
+  }
+.interior .kk,
+    .interior .sns {
+        flex-basis: 15%;
+    }
+
+    .interior .header {
+        width: 100%;
+        align-items: center;
+        position: fixed;
+        background: white;
+        z-index: 10;
+    }
+
+
+    .interior .nav {
+        margin-bottom: 0 !important;
+        order: 2;
+        flex-basis: 100%;
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .interior .nav-pills .nav-link.active,
+    .interior .nav-pills .show>.nav-link {
+        color: #F7C331;
+        background-color: #FFFFFF;
+
+    }
+
+    .interior .nav-link {
+        color: rgb(46, 44, 38);
+        font-family: 'Futura PT', 'Josefin Sans', sans-serif !important;
+        font-style: normal;
+        text-transform: uppercase;
+        letter-spacing: 1pt;
+    }
+
+    .interior .nav-link:hover {
+        color: #F7C331;
+    }
+
+    .interior .nav-link:hover .nav-link::after,
+    .interior .nav-pills .nav-link.active::after,
+    .interior .nav-pills .show>.nav-link::after {
+        transition: .3s ease-in-out;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        margin-top: 5px;
+        background: #F7C331;
+    }
+
+    .interior .content {
+        padding: 15px;
+        width: 100%;
+        padding-top: 150px;
+    }
+
+    .interior .h2 {
+        z-index: 1;
+    }
+
+   .interior .title {
+        justify-content: center;
+        align-items: center;
+        margin: 15px auto;
+    }
+
+   .interior b,
+   .interior strong {
+        color: #777777;
+        font-weight: 900 !important;
+    }
+
+
+    /* carousel */
+
+    .carousel-control     		 { width:  4%; }
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+@media (max-width: 767px) {
+	.carousel-inner .active.left { left: -100%; }
+	.carousel-inner .next        { left:  100%; }
+	.carousel-inner .prev		 { left: -100%; }
+	.active > div { display:none; }
+	.active > div:first-child { display:block; }
+
+}
+@media (min-width: 767px) and (max-width: 992px ) {
+	.carousel-inner .active.left { left: -50%; }
+	.carousel-inner .next        { left:  50%; }
+	.carousel-inner .prev		 { left: -50%; }
+	.active > div { display:none; }
+	.active > div:first-child { display:block; }
+	.active > div:first-child + div { display:block; }
+}
+@media (min-width: 992px ) {
+	.carousel-inner .active.left { left: -16.7%; }
+	.carousel-inner .next        { left:  16.7%; }
+	.carousel-inner .prev		 { left: -16.7%; }	
+}
+
+
+
