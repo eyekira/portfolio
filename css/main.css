@@ -189,7 +189,7 @@ button {
     text-transform: lowercase;
     letter-spacing: 4px;
     line-height: 130%;
-    font-weight: 300 !important;
+    font-weight: 500 !important;
     font-size: 150%;
     margin-bottom: 25px !important;
     padding-top: 2rem;
@@ -712,10 +712,16 @@ div#graphic-design {
 
 div#ux-design,
 div#web-design,
-div#graphic-design, .work-page .wrapper .shadow{
+div#graphic-design{
     background-size: cover !important;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+}
+
+ .work-page .wrapper .shadow{
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 /* 
 div#ux-design:hover,
