@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="../../css/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="../../css/aos.css" />
     <link rel="stylesheet" type="text/css" href="../../css/interior.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/movetop.css" />
+
 
     <!--        Fonts-->
     <link rel="stylesheet" href="https://use.typekit.net/fvl2hcy.css">
@@ -39,6 +41,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../../js/aos.js"></script>
     <script src="../../js/header_fix.js"></script>
+    <script src="../../js/scrollSpy.js"></script>
 
 
     <!--    jquery ends-->
@@ -47,12 +50,12 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
-    <div class="interior">
+    <div class="interior" id="top">
         <div class="header shadow-sm">
             <div style="color: rgb(46, 44, 38);" class="kk" id="kk">
                 <p onclick="location.href='/index.html'">KK</p>
@@ -92,19 +95,125 @@
             </div>
         </div>
         <div class="content">
-            
-            <div>
+            <div id="list-example" class="list-group col-3">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+            </div>
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="col-9 scrollspy-example"
+                tabindex="0">
+                <h4 id="list-item-1">Item 1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies magna quis congue
+                    scelerisque. Quisque rhoncus tortor id lacus imperdiet, lacinia volutpat ipsum pharetra. Quisque
+                    urna orci, finibus a massa id, blandit venenatis nisi. Pellentesque congue, sem eget consequat
+                    iaculis, velit mauris lobortis erat, in ornare lorem eros sit amet nibh. Ut hendrerit faucibus eros,
+                    in fringilla felis faucibus ac. Aliquam iaculis velit ut purus tincidunt, et dignissim purus
+                    fringilla. Maecenas dui orci, convallis quis dictum sit amet, congue consequat turpis. Vestibulum et
+                    rutrum turpis, a consequat tellus.
 
+                    Mauris finibus risus id tellus mollis pretium. Duis quis neque turpis. Orci varius natoque penatibus
+                    et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum primis in faucibus
+                    orci luctus et ultrices posuere cubilia curae; Curabitur eleifend risus et malesuada tempor. Integer
+                    in risus sed urna mollis posuere. Duis convallis, elit vel ultricies sollicitudin, augue mi varius
+                    mauris, nec aliquet felis lacus eu orci.
+
+                    Vestibulum ex augue, rhoncus id malesuada eget, elementum vel quam. Quisque blandit, purus quis
+                    maximus accumsan, neque enim ultrices nibh, at laoreet tortor elit sit amet libero. Mauris quis
+                    neque non massa ullamcorper tincidunt non id sapien. Phasellus pretium nulla justo, sed pretium mi
+                    hendrerit eu. In ut dapibus ipsum. Cras vestibulum tellus et est faucibus, sit amet cursus magna
+                    pulvinar. Donec leo augue, gravida vitae quam nec, facilisis aliquam ante. Vestibulum eu tortor
+                    bibendum augue dictum porta. Proin tincidunt tristique velit eu fermentum. Aliquam venenatis lacinia
+                    rhoncus. Sed lacus nisl, interdum quis massa quis, viverra venenatis ligula. Cras vel dolor elit.
+
+                    Proin sed finibus nulla. Duis vulputate, enim ut interdum cursus, diam orci fermentum nulla, eget
+                    vestibulum nisl orci a augue. Integer interdum placerat arcu ut varius. Morbi dictum massa augue.
+                    Morbi condimentum convallis nibh vitae lobortis. Maecenas semper dui in lacus commodo, eu efficitur
+                    est lobortis. Aenean bibendum, quam at porta vehicula, ipsum enim pharetra mauris, vel eleifend
+                    tortor ex et lorem. Sed vel lorem dictum, lacinia lectus vel, porta ante. Curabitur mollis erat eget
+                    efficitur tincidunt. Vestibulum sed tempor tellus. Sed orci tortor, mattis vitae sagittis sed,
+                    pulvinar ultrices tellus. Nam ut eleifend velit. Vestibulum risus ligula, auctor ut tellus a,
+                    malesuada congue orci. Curabitur ac rhoncus purus, at consectetur sapien. Nam porttitor neque justo,
+                    ut gravida nunc bibendum ut.
+
+                    Nulla vel quam massa. Quisque at est risus. Fusce dignissim ornare tincidunt. Integer suscipit a
+                    elit vitae consequat. Nam vitae nisl in nunc euismod elementum a non ante. Sed molestie dui nunc, at
+                    pulvinar nulla imperdiet vel. Aliquam luctus ante quis eros bibendum rutrum. Vestibulum a purus
+                    lacinia, convallis leo sit amet, suscipit lorem. Nunc vel eros quis lacus ornare scelerisque ac vel
+                    augue.</p>
+                <h4 id="list-item-2">Item 2</h4>
+                <p>Proin sed finibus nulla. Duis vulputate, enim ut interdum cursus, diam orci fermentum nulla, eget
+                    vestibulum nisl orci a augue. Integer interdum placerat arcu ut varius. Morbi dictum massa augue.
+                    Morbi condimentum convallis nibh vitae lobortis. Maecenas semper dui in lacus commodo, eu efficitur
+                    est lobortis. Aenean bibendum, quam at porta vehicula, ipsum enim pharetra mauris, vel eleifend
+                    tortor ex et lorem. Sed vel lorem dictum, lacinia lectus vel, porta ante. Curabitur mollis erat eget
+                    efficitur tincidunt. Vestibulum sed tempor tellus. Sed orci tortor, mattis vitae sagittis sed,
+                    pulvinar ultrices tellus. Nam ut eleifend velit. Vestibulum risus ligula, auctor ut tellus a,
+                    malesuada congue orci. Curabitur ac rhoncus purus, at consectetur sapien. Nam porttitor neque justo,
+                    ut gravida nunc bibendum ut.
+
+                    Nulla vel quam massa. Quisque at est risus. Fusce dignissim ornare tincidunt. Integer suscipit a
+                    elit vitae consequat. Nam vitae nisl in nunc euismod elementum a non ante. Sed molestie dui nunc, at
+                    pulvinar nulla imperdiet vel. Aliquam luctus ante quis eros bibendum rutrum. Vestibulum a purus
+                    lacinia, convallis leo sit amet, suscipit lorem. Nunc vel eros quis lacus ornare scelerisque ac vel
+                    augue.</p>
+                <h4 id="list-item-3">Item 3</h4>
+                <p>Proin sed finibus nulla. Duis vulputate, enim ut interdum cursus, diam orci fermentum nulla, eget
+                    vestibulum nisl orci a augue. Integer interdum placerat arcu ut varius. Morbi dictum massa augue.
+                    Morbi condimentum convallis nibh vitae lobortis. Maecenas semper dui in lacus commodo, eu efficitur
+                    est lobortis. Aenean bibendum, quam at porta vehicula, ipsum enim pharetra mauris, vel eleifend
+                    tortor ex et lorem. Sed vel lorem dictum, lacinia lectus vel, porta ante. Curabitur mollis erat eget
+                    efficitur tincidunt. Vestibulum sed tempor tellus. Sed orci tortor, mattis vitae sagittis sed,
+                    pulvinar ultrices tellus. Nam ut eleifend velit. Vestibulum risus ligula, auctor ut tellus a,
+                    malesuada congue orci. Curabitur ac rhoncus purus, at consectetur sapien. Nam porttitor neque justo,
+                    ut gravida nunc bibendum ut.
+
+                    Nulla vel quam massa. Quisque at est risus. Fusce dignissim ornare tincidunt. Integer suscipit a
+                    elit vitae consequat. Nam vitae nisl in nunc euismod elementum a non ante. Sed molestie dui nunc, at
+                    pulvinar nulla imperdiet vel. Aliquam luctus ante quis eros bibendum rutrum. Vestibulum a purus
+                    lacinia, convallis leo sit amet, suscipit lorem. Nunc vel eros quis lacus ornare scelerisque ac vel
+                    augue.</p>
+                <h4 id="list-item-4">Item 4</h4>
+                <p>Proin sed finibus nulla. Duis vulputate, enim ut interdum cursus, diam orci fermentum nulla, eget
+                    vestibulum nisl orci a augue. Integer interdum placerat arcu ut varius. Morbi dictum massa augue.
+                    Morbi condimentum convallis nibh vitae lobortis. Maecenas semper dui in lacus commodo, eu efficitur
+                    est lobortis. Aenean bibendum, quam at porta vehicula, ipsum enim pharetra mauris, vel eleifend
+                    tortor ex et lorem. Sed vel lorem dictum, lacinia lectus vel, porta ante. Curabitur mollis erat eget
+                    efficitur tincidunt. Vestibulum sed tempor tellus. Sed orci tortor, mattis vitae sagittis sed,
+                    pulvinar ultrices tellus. Nam ut eleifend velit. Vestibulum risus ligula, auctor ut tellus a,
+                    malesuada congue orci. Curabitur ac rhoncus purus, at consectetur sapien. Nam porttitor neque justo,
+                    ut gravida nunc bibendum ut.
+
+                    Nulla vel quam massa. Quisque at est risus. Fusce dignissim ornare tincidunt. Integer suscipit a
+                    elit vitae consequat. Nam vitae nisl in nunc euismod elementum a non ante. Sed molestie dui nunc, at
+                    pulvinar nulla imperdiet vel. Aliquam luctus ante quis eros bibendum rutrum. Vestibulum a purus
+                    lacinia, convallis leo sit amet, suscipit lorem. Nunc vel eros quis lacus ornare scelerisque ac vel
+                    augue.</p>
             </div>
         </div>
+        <button onclick="window.location.href='#top'" id="moveTop">
+            <img src="../../img/down-arrow-y.png">
+        </button>
+    </div>
 </body>
 <style>
-#evme-page-title {
-    background: url(../../img/evme-mockup.png);
-}
+    #evme-page-title {
+        background: url(../../img/evme-mockup.png);
+    }
+
+    .interior .content {
+        padding-top: 15px;
+        display: flex;
+        justify-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 </style>
 <script>
-    $('body').scrollspy({ target: '#navbar-example' })
+    $('body').scrollspy({
+        target: '#navbar-example'
+    })
 </script>
 
 </html>
