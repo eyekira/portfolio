@@ -688,6 +688,7 @@ ul {
     font-size: 26px;
     position: relative;
     top: 0;
+    font-weight: 500 !important;
     transition: .3s ease-in-out;
 }
 
@@ -905,6 +906,7 @@ div#graphic-design:hover {
     .bio-container {
         flex-flow: column;
         width: 80%;
+        margin-bottom: 50px;
     }
 
     .bio-container-1,
