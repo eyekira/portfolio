@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/grid.css">
     <link rel="stylesheet" href="../../css/carousel.css">
+    <link rel="stylesheet" href="../../css/evme.css">
     <link rel="stylesheet" type="text/css" href="../../css/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="../../css/aos.css" />
     <link rel="stylesheet" type="text/css" href="../../css/interior.css" />
@@ -41,8 +42,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../../js/aos.js"></script>
     <script src="../../js/header_fix.js"></script>
-    <script src="../../js/scrollSpy.js"></script>
-
 
     <!--    jquery ends-->
     <!-- bootstrap -->
@@ -56,7 +55,7 @@
     </script>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0">
     <div class="interior" id="top">
         <div class="header shadow-sm">
             <div style="color: rgb(46, 44, 38);" class="kk" id="kk">
@@ -97,15 +96,15 @@
             </div>
         </div>
         <div class="content">
-            <div id="list-example" class="list-group col-3">
-                <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-                <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
-                <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-                <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+            <div id="list-example" class="list-group col-3" style="position: sticky; top: 120px;">
+                <a class="list-group-item list-group-item-action" href="#anchor1">Item 1</a>
+                <a class="list-group-item list-group-item-action" href="#anchor2">Item 2</a>
+                <a class="list-group-item list-group-item-action" href="#anchor3">Item 3</a>
+                <a class="list-group-item list-group-item-action" href="#anchor4">Item 4</a>
             </div>
-            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="col-9 scrollspy-example"
-                tabindex="0">
+            <div class="col-9" tabindex="0">
                 <h4 id="list-item-1">Item 1</h4>
+                <a id="anchor1" class="anchor"></a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies magna quis congue
                     scelerisque. Quisque rhoncus tortor id lacus imperdiet, lacinia volutpat ipsum pharetra. Quisque
                     urna orci, finibus a massa id, blandit venenatis nisi. Pellentesque congue, sem eget consequat
@@ -143,7 +142,8 @@
                     pulvinar nulla imperdiet vel. Aliquam luctus ante quis eros bibendum rutrum. Vestibulum a purus
                     lacinia, convallis leo sit amet, suscipit lorem. Nunc vel eros quis lacus ornare scelerisque ac vel
                     augue.</p>
-                <h4 id="list-item-2">Item 2</h4>
+                <h4 id="list-item-2" class="list-header">Item 2</h4>
+                <a id="anchor2" class="anchor"></a>
                 <p>Proin sed finibus nulla. Duis vulputate, enim ut interdum cursus, diam orci fermentum nulla, eget
                     vestibulum nisl orci a augue. Integer interdum placerat arcu ut varius. Morbi dictum massa augue.
                     Morbi condimentum convallis nibh vitae lobortis. Maecenas semper dui in lacus commodo, eu efficitur
@@ -160,6 +160,7 @@
                     lacinia, convallis leo sit amet, suscipit lorem. Nunc vel eros quis lacus ornare scelerisque ac vel
                     augue.</p>
                 <h4 id="list-item-3">Item 3</h4>
+                <a id="anchor3" class="anchor"></a>
                 <p>Proin sed finibus nulla. Duis vulputate, enim ut interdum cursus, diam orci fermentum nulla, eget
                     vestibulum nisl orci a augue. Integer interdum placerat arcu ut varius. Morbi dictum massa augue.
                     Morbi condimentum convallis nibh vitae lobortis. Maecenas semper dui in lacus commodo, eu efficitur
@@ -176,6 +177,7 @@
                     lacinia, convallis leo sit amet, suscipit lorem. Nunc vel eros quis lacus ornare scelerisque ac vel
                     augue.</p>
                 <h4 id="list-item-4">Item 4</h4>
+                <a id="anchor4" class="anchor"></a>
                 <p>Proin sed finibus nulla. Duis vulputate, enim ut interdum cursus, diam orci fermentum nulla, eget
                     vestibulum nisl orci a augue. Integer interdum placerat arcu ut varius. Morbi dictum massa augue.
                     Morbi condimentum convallis nibh vitae lobortis. Maecenas semper dui in lacus commodo, eu efficitur
