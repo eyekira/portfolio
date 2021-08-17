@@ -1,26 +1,15 @@
-// $('.carousel').carousel({
-//     interval: 6000,
-//     pause: "false"
-//   });
+let items = document.querySelectorAll('.carousel .carousel-item')
 
-jQuery(document).ready(function(){
-    $('.carousel[data-type="multi"] .item').each(function(){
-      var next = $(this).next();
-      if (!next.length) {
-        next = $(this).siblings(':first');
-      }
-      next.children(':first-child').clone().appendTo($(this));
-      
-      for (var i=0;i<4;i++) {
-        next=next.next();
-        if (!next.length) {
-            next = $(this).siblings(':first');
-        }
-        
-        next.children(':first-child').clone().appendTo($(this));
-      }
-    });
-    });
-
-
-    
+items.forEach((el) => {
+    const minPerSlide = 4
+    let next = el.nextElementSibling
+    for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+            // wrap carousel by using first child
+        	next = items[0]
+      	}
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+})
