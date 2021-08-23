@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula&family=Montserrat:wght@600;700&display=swap');
+
 .anchor {
     display: block;
     position: relative;
-    top: -150px;
+    top: -140px;
     visibility: hidden;
 }
 .interior .content {
@@ -12,8 +14,15 @@
     justify-content: space-between;
     align-items: flex-start;
 }
+a.list-group-item{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
 
 .left-sidebar .list-group-item{
+    height: 90px;
+    display: flex;
+    align-items: center;
     color: #212529;
     background-color: #ffffff !important;
     border: 1px solid #ffc107 !important;
@@ -22,16 +31,34 @@
     padding: 20px !important;
     margin: auto !important;
     border-radius: 0 !important;
+    justify-content: center;
 }
 
 .left-sidebar .list-group-item.active{
     background-color: #ffc107 !important;
 }
 
+p{
+    font-family: 'Khula', sans-serif !important;
+    letter-spacing: 0;
+
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content h2:after{
+    margin: 10px 0 20px;
+    content: '';
+    display: block;
+    border-bottom: 8px solid #ffc107;
+    width: 50px;
+}
 @media (max-width: 768px) {
 .list-group{
     flex-direction: row !important;
-
+    width: 100%;
+    overflow: scroll;
 }
 .col-3{
     width: 100% !important;

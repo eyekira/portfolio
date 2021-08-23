@@ -32,3 +32,12 @@
   transform: translateX(0);
 }
 
+@media (min-width: 1300px) {
+
+.carousel-control-prev {
+  left: -9rem;
+}
+.carousel-control-next {
+  right: -9rem;
+}
+}

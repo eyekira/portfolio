@@ -836,6 +836,10 @@ div#graphic-design:hover {
 
 }
 
+.no-padding{
+    padding: 0 !important;
+}
+
 /* ---------Media Queries Breakpoints----------*/
 
 
@@ -955,7 +959,6 @@ div#graphic-design:hover {
         width: 80%;
 
     }
-
 
     /*    nav 1 option*/
 
