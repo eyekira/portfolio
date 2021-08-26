@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-us-compatible" content="ie=edge">
+    <title>GoGo Groceries Case Study</title>
+    <meta name="description" content="Enter a short description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--        CSS styles-->
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/grid.css">
+    <link rel="stylesheet" href="../../css/carousel.css">
+    <link rel="stylesheet" href="../../css/evme.css">
+    <link rel="stylesheet" href="../../css/fullpage.css" />
+    <link rel="stylesheet" href="../../css/aos.css" />
+    <link rel="stylesheet" href="../../css/interior.css" />
+    <link rel="stylesheet" href="../../css/movetop.css" />
+
+
+    <!--        Fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/fvl2hcy.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i|Open+Sans:400,400i,600,600i,700,700i|PT+Serif:700&display=swap"
+        rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/9939cc95e4.js" crossorigin="anonymous"></script>
+    <!--        CSS styles end-->
+    <script src="../../js/fullpage.js"></script>
+    <script src="../../js/carousel.js"></script>
+
+    <!--        Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!--        jquery-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../../js/aos.js"></script>
+    <script src="../../js/header_fix.js"></script>
+
+    <!--    jquery ends-->
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0">
+    <div class="interior" id="top">
+        <div class="header shadow-sm">
+            <div style="color: rgb(46, 44, 38);" class="kk" id="kk">
+                <p onclick="location.href='/index.html'">KK</p>
+            </div>
+            <div class="nav">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation" onclick="location.href='/work/ux.html'">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-ux" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">UX Design</button>
+                    </li>
+                    <li class="nav-item" role="presentation" onclick="location.href='/work/web.html'">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-web" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Web Design</button>
+                    </li>
+                    <li class="nav-item" role="presentation" onclick="location.href='/work/graphic.html'">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-graphic" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">Graphic Design</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- Put page content or note here -->
+            <div class="sns">
+                <a style="color: rgb(46, 44, 38);" id="sns-f" href="https://www.facebook.com/kira0306" target="_blank"
+                    class="fab fa-facebook-f"></a>
+                <a style="color: rgb(46, 44, 38);" id="sns-l" href="https://www.linkedin.com/in/kira-kim-846428108/"
+                    target="_blank" class="fab fa-linkedin-in"></a>
+            </div>
+        </div>
+        <!-- end of header -->
+        <div class="page-title" id="gogo-page-title">
+            <div class="title d-flex">
+                <h2 class="center h2">GoGo Groceries</h2>
+                <h3 class="stroke-text">Case Study</span>
+            </div>
+        </div>
+        <div class="content">
+            <div id="list-example" class="left-sidebar list-group col-3" style="position: sticky; top: 120px;">
+                <a class="list-group-item list-group-item-action" href="#intro">Introduction</a>
+                <a class="list-group-item list-group-item-action" href="#process">Process</a>
+                <a class="list-group-item list-group-item-action" href="#research">Research</a>
+                <a class="list-group-item list-group-item-action" href="#design">Design</a>
+                <a class="list-group-item list-group-item-action" href="#next">Next Step</a>
+            </div>
+            <div class="col-9" tabindex="0">
+
+                <h2 id="list-item-1">Introduction</h2>
+                <a id="intro" class="anchor"></a>
+                <div class="d-flex mt-4 mb-4">
+                    <p class=" no-padding">
+                        In a crisis of pandemics, the online delivery system is surge more than ever. We all want to
+                        stay away from each other but seek a way to find our lives close to normal. GoGo Groceries,
+                        a grocery delivery service of users favorite stores with the advanced delivery-tracking system,
+                        is designed for both shopper and driver
+                        user types.
+                    </p>
+                </div>
+
+                <img id="gantt" style="display: block; object-fit: contain;" src="../../img/gogo/gogo-feedback.png">
+                <div class="d-flex mt-4 mb-4 bubble-container">
+                    <div class="speech-bubble-1">
+                        <em>“... shopper delivered to wrong address.”
+                        </em>
+                        <p class="text-end">- JM V.
+                        </p>
+                    </div>
+                    <div class="speech-bubble-2">
+                        <em>“... never delivered our groceries or contacted us.“
+                        </em>
+                        <p class="text-end">- Samuel K.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>Problem</h4>
+                    <p>One of the largest problems online shoppers face with deliverable
+                        groceries in our research has been that deliveries aren’t trackable, don’t arrive at all, or
+                        are canceled last minute.
+
+                    </p>
+
+                </div>
+
+                <div class="d-flex mt-4 mb-4">
+                    <div class="col-6 no-padding">
+                        <h4>Role</h4>
+                        <p class="col-11 no-padding">It was a group project from the scratch. Within the 8 weeks, I
+                            worked as multiple roles include:
+                            <li>UX Researcher</li>
+                            <li>Visual Designer</li>
+                            <li>Interaction Designer</li>
+                        </p>
+                    </div>
+                    <div class="col-6 no-padding">
+                        <h4>What I did</h4>
+
+                        <p>
+                            <li>Logo Design</li>
+                            <li>Low fidelity prototype using Balsamiq</li>
+                            <li>Assumption and proto persona </li>
+                            <li>User Interview </li>
+                            <li>User Flows and design system</li>
+                            <li>High fidelity prototype using Figma</li>
+                        </p>
+                    </div>
+                </div>
+                <h2 id="list-item-2" class="list-header">Process</h2>
+                <a id="process" class="anchor"></a>
+                <h4>Project Plan</h4>
+                <div class="d-flex mt-4 mb-4">
+                    <div class="col-6 no-padding">
+                        <p class="col-11 no-padding">
+                            We used trello as a project management tool and assigned team members to the tasks. This pm
+                            tool sort of worked as a blueprint of what our team supposed to do UX activities within the
+                            project timeline, which was 8 weeks.
+                        </p>
+                    </div>
+                    <div class="col-6 no-padding">
+                        <img style="display: block; object-fit: contain; width: 100%;"
+                            src="../../img/gogo/gogo-trello.png"></div>
+                </div>
+
+
+                <h4>UX Process</h4>
+                <p>Our team adopted agile methodology in order to evolve the product by user feedback rapidly, without
+                    risking overall project scope and time. We used:</p>
+                <div class="d-flex mb-4">
+                    <div class="col-6 no-padding">
+                        <p>
+                            <li>Competitive analysis</li>
+                            <li>User research</li>
+                            <li>User Stories</li>
+                            <li>Assumptions</li>
+                            <li>Atomic Design</li>
+                            <li>Persona</li>
+                            <li>Task flow</li>
+                            <li>User Flows</li>
+                        </p>
+                    </div>
+                    <div class="col-6 no-padding">
+                        <p>
+                            <li>Journey Map</li>
+                            <li>Sketches (Low-Fidelity): Balsamiq</li>
+                            <li>Design System and Guideline</li>
+                            <li>Wireframes-Figma</li>
+                            <li>Wireflows-Figma</li>
+                            <li>High-fidelity-Figma</li>
+                            <li>Interviews</li>
+                        </p>
+                    </div>
+                </div>
+                <img style="display: block; object-fit: contain; width: 100%;"
+                    src="../../img/gogo/gogo-userflow-wireframe.png">
+                <a class="btn mt-3 mb-3"
+                    href="https://xd.adobe.com/view/5c5c3d7f-5154-4738-9d9c-d875008b83af-090f/?fullscreen"
+                    target="_blank">View
+                    User Flow</a>
+                <a class="btn mt-3 mb-3" href="/file/GoGo Groceries.bmpr" target="_blank">Download Balsamiq File</a>
+                <h2 id="list-item-3" class="list-header mt-5">Research</h2>
+                <a id="research" class="anchor"></a>
+                <div class="d-flex mb-4">
+                    <div class="col-6 no-padding">
+                        <h4>Assumptions</h4>
+                        <iframe class="assumption"
+                            src="https://docs.google.com/document/d/e/2PACX-1vSbn5xTjUAHlmCtOmy08nuGkqBNffRw4ECSGO_QZmwk-8upgg2A4ywpIZXV8-mWguFxp4hVKoUmY9_O/pub?embedded=true"></iframe>
+                    </div>
+                    <div class="col-6 no-padding">
+                        <h4>Proto Persona</h4>
+                        <img style="display: block; object-fit: contain; width: 100%;"
+                            src="../../img/gogo/gogo-persona.png">
+                    </div>
+                </div>
+
+
+                <h2 id="list-item-4" class="list-header mt-5">Design</h2>
+                <a id="design" class="anchor"></a>
+
+
+                <h4 class="mt-5">Wireframe and Wireflow</h4>
+                <p>
+                    I was focused on the customer side of the wireframe and wire flow. They both were based on the user
+                    flows and sketch(Balsamiq), and it's in low fidelity type without colors or much detail. Low
+                    fidelity wireframe is to see overall features and ideas and what users will interact with on each
+                    page.
+                </p>
+                <img class="w-100" style="width: 100%; display: block; object-fit: contain;"
+                    src="../../img/gogo/gogo-customer-wireframe.png">
+                <img class="w-100" style="width: 100%; display: block; object-fit: contain;"
+                    src="../../img/gogo/gogo-wireflow.png">
+                <a class="btn mt-3 mb-3" href="https://www.figma.com/file/SGTK7HiEaKJ3AShXx6g9E5/?node-id=0%3A1"
+                    target="_blank">View Lo-fi Wireframe</a>
+                <a class="btn mt-3 mb-3" href="https://www.figma.com/file/SGTK7HiEaKJ3AShXx6g9E5/?node-id=35%3A14"
+                    target="_blank">View Wireflow</a>
+
+                <h4 class="mt-5">Hi-fi Prototype</h4>
+                <p>Mid fidelity prototype is created with figma based on the user flow and simple style guide. In this
+                    stage, overall layout of pages are designed with placeholder images and some blurbs.
+                </p>
+                <div class="d-flex mb-4">
+                    <div class="col-6 no-padding">
+                        <h5>Customer Side</h5>
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="300" height="450"
+                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FgtXWnD3877r2OZFDEpVKXh%2FGroup-1-Week-5-Assignment%3Fnode-id%3D359%253A500%26scaling%3Dscale-down"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="col-6 no-padding">
+                        <h5>Driver Side</h5>
+
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="300" height="450"
+                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FgtXWnD3877r2OZFDEpVKXh%2FGroup-1-Week-5-Assignment%3Fnode-id%3D323%253A1007%26scaling%3Dscale-down%26starting-point-node-id%3D323%253A11"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <h4 class="mt-5">Usability Testing</h4>
+                <div class="d-flex">
+                    <div class="col-6 no-padding ">
+                        <h5>Testing Methods</h5>
+                        <img style="width: 150px; display: block; object-fit: contain;"
+                            src="../../img/evme/evme-usability-testing-method.png">
+                        <p>Unmoderated usability testing with interviewer and notetaker.
+                        </p>
+
+                        <h5>User Scenario for Customer</h5>
+                        <p> You will be looking at a grocery delivery app from the customer's perspective of shopping,
+                            who has used the app before.
+                            Meaning you have already signed up. You will be shopping at Harris Teeter.
+                        </p>
+                        <h5>User Scenario for Driver</h5>
+                        <p>
+                            You will be looking at a delivery app from the delivery driver's perspective of shopping and
+                            delivering groceries, who has used the app before. Meaning you have already signed up.
+
+                        </p>
+                    </div>
+                    <div class="col-6 no-padding ml-3">
+
+                        <h5 style="padding-left: 31.5pt;">Usability Testing Script</h5>
+                        <iframe id="usability-test"
+                            src="https://docs.google.com/document/d/e/2PACX-1vQ2yE5swrWzrHcgpYo9x8Y7E0Z4kyNWhLWkkSrBiL8nNetSxseAwOel6RvwPQYWv4U1AcYxI-YZk1Bl/pub?embedded=true"></iframe>
+                    </div>
+                </div>
+                <h4 class="mt-5">Key Findings & Iteration</h4>
+                <div class="d-flex justify-content-between">
+                    <div class="col-4 no-padding mt-4 d-flex flex-column justify-content-center">
+                        <h5>Navigation Function</h5>
+                        <p>During user research, we learned that the users did not like the idea of leaving the current
+                            app to navigate on the Driver side.
+                        </p>
+                        <h5>Key Decision:</h5>
+                        <p>Place the navigation function within the GoGo Groceries app. So the user will not have to
+                            leave the app and come back.
+
+                        </p>
+                    </div>
+                    <div class="col-7 no-padding ">
+                        <img class="w-100" style="display: inline-block; object-fit: contain;"
+                            src="../../img/gogo/gogo-before-after-1.png"></div>
+                  
+                </div>
+                <hr style="color: #ffc107; height: 2px;">
+
+                <div class="d-flex justify-content-between">
+                   
+                    <div class="col-7 no-padding ">
+                        <img class="w-100" style="display: inline-block; object-fit: contain;"
+                            src="../../img/gogo/gogo-before-after-2.png"></div>
+
+
+                            <div class="col-4 no-padding mt-4 d-flex flex-column justify-content-center">
+                                <h5>Progress Bar and Icons
+                                </h5>
+                                <p>In initial discussions and interviews, we came to the conclusion to change what our tracker looked like. This change allowed the tracker to become more user friendly with less typography and information needed. 
+                                </p>
+                                <h5>Key Decision:</h5>
+                                <p>We added a large icon in the center of the page, along with a modified progress bar.
+        
+                                </p>
+                            </div>
+                </div>
+<hr style="color: #ffc107; height: 2px;">
+<div class="d-flex justify-content-between">
+    <div class="col-4 no-padding mt-4 d-flex flex-column justify-content-center">
+                        <h5>Delivery Tracking Option
+                        </h5>
+                        <p>From our user testing, we learned that not every user will want to track their deliveries and that we needed to add a confirmation page before the delivery tracker.
+                        </p>
+                        <h5>Key Decision:</h5>
+                        <p>We added an option for users who do not wish to track their deliveries on the Thank-
+                            You-Confirmation page. 
+                            
+
+                        </p>
+                    </div>
+                    <div class="col-3 no-padding mt-4 d-flex flex-column justify-content-center">
+                        <img class="w-100" style="display: inline-block; object-fit: contain;"
+                            src="../../img/gogo/gogo-before-3.jpg"></div>
+                            <div class="col-4 no-padding mt-4 d-flex flex-column justify-content-center">
+                                <img class="w-100" style="display: inline-block; object-fit: contain;"
+                            src="../../img/gogo/gogo-after-3.jpg"></div>
+                </div>
+                <h4 class="mt-5">Final Hi-fi Prototype</h4>
+              
+                <div class="d-flex no-padding">
+                    <div class="col-6 no-padding">
+                        <h5>Customer Prototype</h5>
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="300" height="500" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FWGNSvQdra1KEI8dxYXtxnt%2FGroup-1-Week-7-Assignment%3Fnode-id%3D570%253A659%26scaling%3Dscale-down" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-8 no-padding">
+                        <h5>Driver Prototype</h5>
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="300" height="500" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FWGNSvQdra1KEI8dxYXtxnt%2FGroup-1-Week-7-Assignment%3Fnode-id%3D582%253A1649%26scaling%3Dscale-down" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <h2 id="list-item-5" class="list-header mt-5">Next Step</h2>
+                <a id="next" class="anchor"></a>
+                <blockquote class="blockquote">                    Next, we would need the test the changes we made from our row of user testing to see if it resolves some of the issues we had.              
+                </blockquote>
+                <p m>
+                    <li>Adding a system that customers can purchase after checking the actual products from the store by using photos or video chat with the driver.</li>
+                        <li>Bring the two prototypes together into one.</li>
+                            <li>Continue growing the design system.</li>
+                                <li>Add to the overall scope of the project, making it more usable and testable.</li>
+                                    <li>Research and determine how we will sell our product.</li>
+                                        <li>Driver side:</li>
+                                           <ul style="list-style: disc;">
+                                           <li>Restructuring the layout of the Item Quantity screen</li>
+                                                <li>Keeping found items list in the grocery list</li></ul>
+                    
+                </p>
+             
+            </div>
+
+        </div>
+        <button onclick="window.location.href='#top'" id="moveTop">
+            <img src="../../img/down-arrow-y.png">
+        </button>
+    </div>
+</body>
+<style>
+    #gogo-page-title {
+        background: url(../../img/gogo/gogo-page-title.jpg);
+        background-position: 50% 30%;
+        ;
+    }
+
+    #gantt-embed {
+        width: 90%;
+        height: 300px;
+    }
+
+    #gantt {
+        width: 90%;
+        height: 300px;
+        ;
+    }
+
+    a.btn {
+        color: white;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        background: #ffc107;
+    }
+
+    .assumption {
+        height: 250px;
+    }
+
+    #usability-test {
+        width: 100%;
+        height: 250px;
+    }
+
+    .blockquote {
+        background: #ffc10718;
+        padding: 30px !important;
+        border-left: 10px solid #ffc107;
+        margin: 1.5em 10px;
+        padding: 0.5em 10px;
+        quotes: "\201C""\201D""\2018""\2019";
+    }
+
+    .bubble-container div {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .speech-bubble-1,
+    .speech-bubble-2 {
+        position: relative;
+        background: #eeeeee;
+        border-radius: .4em;
+    }
+
+    .speech-bubble-1 {
+        position: relative;
+        top: -60px;
+    }
+
+    .speech-bubble-2:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 31px solid transparent;
+        border-bottom-color: #eeeeee;
+        border-top: 0;
+        border-left: 0;
+        margin-left: -15.5px;
+        margin-top: -31px;
+    }
+
+    .speech-bubble-1:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 31px solid transparent;
+        border-bottom-color: #eeeeee;
+        border-top: 0;
+        border-right: 0;
+        margin-left: -15.5px;
+        margin-top: -31px;
+    }
+
+    @media (max-width: 1300px) {
+        .prototype-row {
+            flex-flow: column;
+        }
+
+        .prototype-row iframe {
+            width: 70vw;
+            height: 95vh;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .d-flex {
+            flex-flow: column;
+        }
+
+        .col-6,
+        .col-4,
+        .col-5,
+        img {
+            width: 100%;
+        }
+    }
+</style>
+
+</html>
