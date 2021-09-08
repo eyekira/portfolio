@@ -181,7 +181,7 @@
                         <h6 class="text-center">Google Spreadsheet</h6>
                     </div>
                     <div class="col-6 no-padding ">
-                        <img id="gantt" style="display: block; object-fit: cover;"
+                        <img id="gantt" style="display: block; object-fit: contain;"
                             src="../../img/evme/evme-gantt-chart.png">
                         <h6 class="text-center">Slick Gantt</h6>
                     </div>
@@ -199,21 +199,35 @@
                     and basic user flow ideas while in the early stage. </p>
                 <img class="w-100" style="width: 100%; display: block; object-fit: contain;"
                     src="../../img/evme/evme-process-02.png">
+                <a class="btn mt-3 mb-3" href="../../img/evme/evme-storyboard.jpg" target="_blank">View Storyboard</a>
+
                 <a class="btn mt-3 mb-3" href="https://www.mindmeister.com/1832412444?t=NAH5fchlnt" target="_blank">View
                     Mindmap</a>
                 <a class="btn mt-3 mb-3" href="https://www.figma.com/file/iYOpmMsnvY5rVjBhFbWgvz/?node-id=0%3A1"
                     target="_blank">View User Flow</a>
                 <h2 id="list-item-3" class="list-header mt-5">Research</h2>
                 <a id="research" class="anchor"></a>
-                <h4>Card Sorting</h4>
+                <h4>Competitive Analysis</h4>
+                <div class="d-flex">
+                    <div class="col-6 no-padding">
+                        <img class="w-100"
+                            style="cursor: pointer; width: 100%; padding-right: 15px; display: block; object-fit: contain;"
+                            src="../../img/evme/evme-competitive-analysis-01.jpg"
+                            onclick="window.open('../../img/evme/evme-competitive-analysis-01.jpg')"></div>
+                    <div class="d-flex">
+
+                        <img class="w-100" style="cursor: pointer; width: 100%; display: block; object-fit: contain;"
+                            src="../../img/evme/evme-competitive-analysis-02.jpg"
+                            onclick="window.open('../../img/evme/evme-competitive-analysis-02.jpg')">
+                    </div>
+                </div>
+                <h4 class="mt-4">Card Sorting</h4>
                 <p>
                     The main reason of conducting card sorting is for getting information architecture of EVME App, in
                     order to build out the app structure and user flow. I used hybrid card sorting method by Optimal
                     sort, an online platform to create and send card sorting for gather data collectively and
                     effectivly.
                 </p>
-                <img class="w-100" style="width: 100%; display: block; object-fit: contain;"
-                    src="../../img/evme/evme-cardsorting.png">
                 <a class="btn mt-3 mb-3"
                     href="https://app.optimalworkshop.com/optimalsort/5r6ccibo/65dx3870/shared-results#/t/results/analysisTools/categories"
                     target="_blank">View Card Sort Result</a>
@@ -225,10 +239,18 @@
                     survey only visible for the right target.</p>
                 <img class="w-100" style="width: 100%; display: block; object-fit: contain;"
                     src="../../img/evme/evme-survey-03.png">
+                <img class="w-100" style="width: 100%; display: block; object-fit: contain;"
+                    src="../../img/evme/evme-survey-result.png">
                 <a class="btn mt-3 mb-3"
                     href="https://docs.google.com/forms/d/15rl-d4VMmQMOv9dzF7wH7dq0yrzUaCxY6c2eWdV7UZ0/edit#responses"
                     target="_blank">View Survey Result</a>
 
+                <h4 class="mt-5">User Persona</h4>
+                <img class="w-100" style="width: 100%; display: block; object-fit: contain;"
+                    src="../../img/evme/evme-persona.png">
+                <h4 class="mt-5">Journey Mapping</h4>
+                <img class="w-100" style="width: 100%; display: block; object-fit: contain;"
+                    src="../../img/evme/evme-journey-map.png">
 
 
                 <h2 id="list-item-4" class="list-header mt-5">Design</h2>
@@ -381,18 +403,18 @@
         }
     }
 
-        @media (max-width: 768px) {
-            .d-flex {
-                flex-flow: column;
-            }
-
-            .col-6,
-            .col-4,
-            .col-5,
-            img {
-                width: 100%;
-            }
+    @media (max-width: 768px) {
+        .d-flex {
+            flex-flow: column;
         }
+
+        .col-6,
+        .col-4,
+        .col-5,
+        img {
+            width: 100%;
+        }
+    }
 </style>
 
 </html>
